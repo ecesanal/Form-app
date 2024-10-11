@@ -1,0 +1,41 @@
+﻿@using LittleFormApp.Models
+@model IEnumerable<Product>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Ürün Liste</h2>
+<br />
+
+<table class="table table-sm table-bordered">
+	<thead>
+	<th>NAME</th>
+	<th>PRİCE</th>
+	<th>İS APPROVED</th>
+	<th>OPTİONS</th>
+	</thead>
+	<tbody>
+		@foreach(var item in Model)
+		{
+			<tr>
+				<td>@item.Name</td>
+				<td>@item.Price</td>
+				<td>
+					@if(item.isApproved)
+					{
+					<span class="btn btn-pill btn-success">Onaylanmış</span>
+					}
+					else
+					{
+						<span class="btn btn-pill btn-danger">Onaylanmadı</span>
+					}
+					</td>
+				<td>
+					<a class ="btn btn-danger btn-sm" asp-controller="Home" asp-action="Edit" asp-route-id="@item.Id">Update</a>
+					
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
