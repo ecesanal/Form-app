@@ -1,0 +1,39 @@
+﻿@using LittleFormApp.Models
+@model Product
+@{
+	ViewData["Title"] = "Create";
+}
+<h1>Create</h1>
+<br />
+<form asp-controller="Home" asp-action="Create" method="post">
+	<div class="form-group">
+		<label>Name</label>
+		<input asp-for="Name" class="form-control" />
+	</div>
+	
+	<div class="form-group">
+		<label>Description</label>
+		<input asp-for="Description" class="form-control" />
+	</div>
+	
+	<div class="form-group">
+		<label>Price</label>
+		<input asp-for="Price" class="form-control" />
+	</div>
+	
+	<div class="form-group">
+		<label>Category</label>
+		<select asp-for="Category" asp-items="@ViewBag.Categories" class="form-control" >
+		<option selected disabled>Select Category</option >
+			</select>
+	</div>
+	
+	<div class="form-check">
+		<label class="form-check-label">
+			<input asp-for="isApproved" class="form-check-input" />
+			is Approved
+		</label>
+	</div>
+
+	<input type="submit" class="btn btn-danger" />
+</form>

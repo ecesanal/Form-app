@@ -28,3 +28,4 @@ C:\Users\e\Desktop\.netcoreform\LittleFormApp\obj\Debug\net7.0\refint\LittleForm
 C:\Users\e\Desktop\.netcoreform\LittleFormApp\obj\Debug\net7.0\LittleFormApp.pdb
 C:\Users\e\Desktop\.netcoreform\LittleFormApp\obj\Debug\net7.0\LittleFormApp.genruntimeconfig.cache
 C:\Users\e\Desktop\.netcoreform\LittleFormApp\obj\Debug\net7.0\ref\LittleFormApp.dll
+C:\Users\e\Desktop\.netcoreform\LittleFormApp\obj\Debug\net7.0\LittleFormApp.sourcelink.json

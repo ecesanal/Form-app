@@ -5,6 +5,7 @@
         Pants,
         Hoodie,
         Blouse,
-        Boots
+        Boots,
+        Hat
     }
 }

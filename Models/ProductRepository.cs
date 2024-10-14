@@ -30,14 +30,14 @@
             },new Product()
             {
                 Id = 4,
-                Name="Ürün5",
+                Name="Ürün4",
                 Description="Description 4",
                 Price=13,
                 isApproved=true,
             },new Product()
             {
                 Id = 5,
-                Name="Ürün1",
+                Name="Ürün5",
                 Description="Description 5",
                 Price=1234,
                 isApproved=false,
